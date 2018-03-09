@@ -1,0 +1,3 @@
+[submodule "18_03_gradient_descent/fashion-mnist"]
+	path = 18_03_gradient_descent/fashion-mnist
+	url = https://github.com/zalandoresearch/fashion-mnist.git
