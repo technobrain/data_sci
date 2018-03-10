@@ -73,8 +73,9 @@ class MultipleLogisticRegressioniClassifier:
             self.b -= lr * gb
 
             # 重みを記録
-            self.W_hist = np.append(self.W_hist, self.W[np.newaxis], axis=0)
-            self.b_hist = np.append(self.b_hist, self.b[np.newaxis], axis=0)
+            if history:
+                self.W_hist = np.append(self.W_hist, self.W[np.newaxis], axis=0)
+                self.b_hist = np.append(self.b_hist, self.b[np.newaxis], axis=0)
 
             if verbose != False:
                 print("Step " + str(step + 1) + "/" + str(steps) + \
